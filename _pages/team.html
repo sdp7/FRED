@@ -1,7 +1,7 @@
 ---
 layout: default_layout
 title: "FRED - Team"
-permalink: /team
+permalink: /fred/team
 ---
 <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
 url(
@@ -11,20 +11,15 @@ url(
 </div>
 
 <div id="sdp7">
-	<br><br>
-	<section class = "team">
-		<div class = "container">
-			<div class ="row">
-				{% for member in site.data.team %}
+	<br>
+
+	<center>
+		{% for member in site.data.team %}
 					<div class = "col-md-3 profile text-center">
-						<div class = "img-box">
-							<img src="site_assets/images/team/{{ member.image }}" class=" img-responsive" width="240px"></a>
-						</div>
 						<h2>{{ member.name }}</h2>
-						<h3>{{ member.position }}</h3>
 					</div>
-				{% endfor %}
-			</div>
-		</div>
-	</section>
+		{% endfor %}
+	</center>
+
+	<br>
 </div>
